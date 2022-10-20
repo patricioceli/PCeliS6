@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCeliS1.SistemaCalificaciones">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="50" >
+                <Image x:Name="imgIcono" Source="itq"></Image>
+                <Label Text="Sistema de Calificaciones"
+                   FontSize="40" HorizontalTextAlignment="Center" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Label Text="Parcial 1" FontSize="35" TextColor="Red" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="txtNotaSeguimiento1" Placeholder="Nota de Seguimiento" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+                <Entry x:Name="txtNotaExamen1" Placeholder="Nota de Examen 1" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+                <Entry x:Name="txtNotaParcial1" Placeholder="Nota Parcial 1" Keyboard="Numeric" IsEnabled="False" ></Entry>
+                <Button x:Name="btnParcial1" Text="Calcular Parcial 1" FontAttributes="Bold" TextColor="White" Clicked="btnParcial1_Clicked" BackgroundColor="Red" ></Button>
+
+                <Label Text="Parcial 2" FontSize="35" TextColor="Red" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="txtNotaSeguimiento2" Placeholder="Nota de Seguimiento" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+                <Entry x:Name="txtNotaExamen2" Placeholder="Nota de Examen 1" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+                <Entry x:Name="txtNotaParcial2" Placeholder="Nota Parcial 2" Keyboard="Numeric" IsEnabled="False" ></Entry>
+                <Button x:Name="btnParcial2" Text="Calcular Parcial 2" FontAttributes="Bold" TextColor="White" Clicked="btnParcial2_Clicked" BackgroundColor="Red" ></Button>
+                <Button x:Name="btnVerificar" Text="Verificar Estado" FontAttributes="Bold" TextColor="White" Clicked="btnVerificar_Clicked" BackgroundColor="Green" ></Button>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
