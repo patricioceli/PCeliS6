@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="50" >
+                <Label x:Name="lblUsuarioConectado" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="8"/>
                 <Image x:Name="imgIcono" Source="itq"></Image>
                 <Label Text="Sistema de Calificaciones"
                    FontSize="40" HorizontalTextAlignment="Center" FontAttributes="Bold"

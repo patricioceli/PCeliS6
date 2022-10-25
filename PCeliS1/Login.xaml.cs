@@ -15,8 +15,8 @@ namespace PCeliS1
 
         private void btnIniciarSesion_Clicked(object sender, EventArgs e)
         {
-            string user = "pceli";
-            string pass = "12345";
+            string user = "estudiante2022";
+            string pass = "uisrael2022";
 
 
             if (!String.IsNullOrEmpty(txtUsuario.Text))
@@ -31,7 +31,7 @@ namespace PCeliS1
                         if (pass == tPass)
                         {
                             DisplayAlert("Success", "Acceso exitoso.", "OK");
-                            Navigation.PushAsync(new SistemaCalificaciones());
+                            Navigation.PushAsync(new SistemaCalificaciones(tUsuario));
                         }
                         else
                         {

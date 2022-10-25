@@ -12,9 +12,10 @@ namespace PCeliS1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SistemaCalificaciones : ContentPage
     {
-        public SistemaCalificaciones()
+        public SistemaCalificaciones( string usuario)
         {
             InitializeComponent();
+            lblUsuarioConectado.Text = "El usuario conectado es:" + usuario;
         }
 
         private void btnParcial1_Clicked(object sender, EventArgs e)
