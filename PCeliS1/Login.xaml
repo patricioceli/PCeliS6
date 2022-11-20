@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCeliS1.Login">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="20">
-          
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
             <Image x:Name="imgIcono" Source="itq"></Image>
             <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" ></Entry>
             <Entry x:Name="txtContrasena" Placeholder="Ingrese el password" IsPassword="True" ></Entry>

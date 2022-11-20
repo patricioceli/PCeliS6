@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCeliS1.ListadoEstudiantes">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Listado Estudiantes" FontSize="Large" HeightRequest="50" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ListView x:Name="lstViewEstudianres" SelectionMode="Single" ItemSelected="lstViewEstudianres_ItemSelected_1" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="500">
+                            <StackLayout>
+                                <Grid MinimumHeightRequest="50">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".2*" />
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".3*" />
+                                        <ColumnDefinition Width=".3*" />
+                                   
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*" />
+                                        <RowDefinition Height="2*" />
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding codigo}" FontSize="10" Grid.RowSpan="2"/>
+                                    <Label Grid.Column="1" FontAttributes="Bold" FontSize="10"
+                                           Text="{Binding nombre}"
+                                           VerticalOptions="Center" />
+                                    <Label Grid.Column="2" FontAttributes="Bold" FontSize="10"
+                                           Text="{Binding apellido}"
+                                           VerticalOptions="Center" />
+                                    <Label Grid.Column="3" FontSize="10" 
+                                           Text="{Binding correo}" 
+                                           VerticalOptions="Center"/>
+                                    <Label Grid.Column="4"
+                                           FontSize="10" 
+                                           Text="{Binding telefono}" VerticalOptions="Center"  />
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Actualizar" x:Name="btnActualizar" Clicked="btnActualizar_Clicked" BackgroundColor="CornflowerBlue" />
+            <Button Text="Ingresar Datos" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" TextColor="White" BackgroundColor="ForestGreen" />
+            <Button Text="Eliminar ID" x:Name="btnEliminar" Clicked="btnEliminar_Clicked" TextColor="White" BackgroundColor="Red"/>
+            <Button Text="Eliminar Datos" x:Name="btnEliminarID" Clicked="btnEliminarID_Clicked" TextColor="White" BackgroundColor="DarkRed" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

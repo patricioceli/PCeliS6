@@ -8,7 +8,7 @@ namespace PCeliS1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new Login());
+            MainPage = new NavigationPage (new ListadoEstudiantes ());
         }
 
         protected override void OnStart()
